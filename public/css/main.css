@@ -1,0 +1,99 @@
+.audio-box {
+  background: black;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.cover-wrapper {
+  background: black;
+  position: relative;
+}
+.cover-wrapper img {
+  width: 100%;
+}
+.cover-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.audio-player {
+  position: absolute;
+  top: 0;
+}
+.audio-player button {
+  background: transparent;
+  border: 0;
+}
+
+.cover-wrapper:hover .overlay {
+  transition: background-color 0.5s ease-out;
+  visibility: visible;
+  background: rgba(0,0,0,0.6);
+}
+
+.cover-wrapper .mejs-controls {
+  visibility: hidden;
+  position: absolute;
+  top: 100px;
+  left: 58px;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.cover-wrapper:hover .mejs-controls {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 0.1s, opacity 300ms;
+}
+
+.mejs-controls .mejs-button {
+  display: inline-block;
+}
+
+.mejs-controls button {
+  z-index: 1;
+  color: white;
+  vertical-align: middle;
+}
+
+.mejs-controls .mejs-play .icon-play,
+.mejs-controls .mejs-pause .icon-play {
+  width: 125px;
+  font-size: 160px;
+  margin: 0 45px;
+}
+
+.mejs-controls .mejs-pause .icon-play {
+  font-weight: 100;
+}
+
+.mejs-controls .mejs-prev-button .icon-prev,
+.mejs-controls .mejs-next-button .icon-next {
+  font-size: 75px;
+}
+.mejs-controls .mejs-next-button .icon-next {
+  margin-left: 15px;
+}
+
+.cover-wrapper .meta {
+  background: rgba(0,0,0,0.6);
+  width: 380px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+}
+.cover-wrapper .meta h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+.cover-wrapper .meta h2 {
+  margin: 10px;
+  font-size: 16px;
+}
