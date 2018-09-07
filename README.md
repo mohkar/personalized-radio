@@ -1,3 +1,1 @@
-# personalized-radio
-
-A radio player which learns user behaviour to tailor personilized playlist.
+A radio player which learns user behaviour to tailor personalized playlist.
